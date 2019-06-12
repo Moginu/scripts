@@ -1,4 +1,5 @@
 #!/bin/bash           
+# add alias ssh='f(){ $HOME/.ssh/cp_conf.sh "$@" && ssh "$@";}; f' to your .bash_profile
 UNAME=$1              
 OUTPUT="$(ssh-keygen -H -F $UNAME)"
                       
